@@ -394,5 +394,46 @@ export default {
 
 /* ===========================================  Small Smartphones Landscape =================================  */
 @media (min-width: 500px) and (max-width: 736px) {
+  .wrapper {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  #whyChooseUs {
+    height: initial;
+    padding-bottom: 2rem;
+  }
+  #whyChooseUs header {
+    height: auto;
+    font-size: 2rem;
+  }
+  #whyChooseUs header h1 {
+    padding-left: 0;
+  }
+  .div-wrapper {
+    flex-direction: column;
+    text-align: center;
+    height: initial;
+  }
+  .aside {
+    padding: 0;
+    margin: 0;
+    flex-basis: 0;
+    margin-bottom: 20px;
+  }
+  .aside:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .aside-text p {
+    width: 60%;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .aside-text h2 {
+    padding-bottom: 10px;
+  }
+  .aside img {
+    width: 70%;
+  }
 }
 </style>

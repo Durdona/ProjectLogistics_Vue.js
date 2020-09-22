@@ -120,5 +120,28 @@ export default {
 
 /* ===========================================  Small Smartphones Landscape =================================  */
 @media (min-width: 500px) and (max-width: 736px) {
+  #forDrivers {
+    height: auto;
+  }
+  .footer-info {
+    padding-left: 0px;
+  }
+  #forDrivers header {
+    height: auto;
+    font-size: 2rem;
+  }
+  #forDrivers header h1 {
+    padding-left: 0;
+  }
+  #forDrivers .driver-text {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 2rem;
+  }
+  #forDrivers .driver-text p {
+    line-height: 1.8rem;
+  }
 }
 </style>

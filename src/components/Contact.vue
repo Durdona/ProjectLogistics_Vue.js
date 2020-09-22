@@ -480,5 +480,69 @@ export default {
 
 /* ===========================================  Small Smartphones Landscape =================================  */
 @media (min-width: 500px) and (max-width: 736px) {
+  #contactUs {
+    height: initial;
+    padding-bottom: 2rem;
+  }
+  #contactUs header {
+    height: auto;
+    font-size: 2rem;
+  }
+  #contactUs header h1 {
+    padding-left: 0;
+  }
+  .contact-text p {
+    position: static;
+    top: auto;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contact-content-splitter {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-content .form-wrapper {
+    height: initial;
+  }
+  .contact-content .form {
+    padding: 35px 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contact-content .form:before {
+    border-radius: 5px;
+  }
+  .contact-content .form img.bottom {
+    border-radius: 5px;
+  }
+  .contact-content .form .input-group input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .contact-content .form .input-group label {
+    font-size: 1rem;
+  }
+  .contact-icons-container {
+    width: 100%;
+    padding-left: 0;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contact-me-icons {
+    padding-bottom: 2rem;
+  }
+  .phone-contact-wrapper {
+    padding-top: 2rem;
+  }
+  .contact-me-icons ion-icon {
+    font-size: 3rem;
+  }
+  .contact-me-icons h3 {
+    font-size: 1.8rem;
+  }
+  .contact-me-icons p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
 }
 </style>

@@ -142,5 +142,29 @@ export default {
 
 /* ===========================================  Small Smartphones Landscape =================================  */
 @media (min-width: 500px) and (max-width: 736px) {
+  .footer {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    height: 100%;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding-left: 10px;
+    flex-direction: column;
+  }
+  .footer-info .social {
+    margin-left: 0;
+    padding-top: ;
+  }
+  .coded-dev {
+    width: 40%;
+  }
+  .social {
+    display: none;
+  }
 }
 </style>
