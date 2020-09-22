@@ -31,7 +31,7 @@ export default {
         defaults: { opacity: 0, ease: "linear", autoAlpha: 0 },
       });
       animate_drivers_h1.from("header .drivers", {
-        duration: 1.5,
+        duration: 1,
         scale: 0,
         transformOrigin: "50% 50%",
         stagger: 0.5,

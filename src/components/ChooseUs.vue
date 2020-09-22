@@ -90,33 +90,20 @@ export default {
       let animateChoose = gsap.timeline({
         defaults: { opacity: 0, ease: "linear", autoAlpha: 0 },
       });
-      const asideSVG = document.querySelectorAll(".aside-text-svg");
-      animateChoose.from(
-        asideSVG,
-        {
-          autoAlpha: 0,
-          opacity: 0.2,
-          yoyo: true,
-          repeat: -1,
-          duration: 1,
-          stagger: 1,
-        },
-        "-=1"
-      );
 
       var controller = new ScrollMagic.Controller();
 
       // Animating h1  WhyChooseUs
 
       animateChoose.from("header .why", {
-        duration: 1.5,
+        duration: 1,
         scale: 0,
         transformOrigin: "50% 50%",
         stagger: 0.5,
       });
       new ScrollMagic.Scene({
         triggerElement: "header .why",
-        triggerHook: 0.9,
+        triggerHook: 1,
       })
         .setTween(animateChoose)
         .addTo(controller);
@@ -152,6 +139,21 @@ export default {
       })
         .setClassToggle(".aside4", "fade-in")
         .addTo(controller);
+
+      //  animating SVG background on asides
+      const asideSVG = document.querySelectorAll(".aside-text-svg");
+      animateChoose.from(
+        asideSVG,
+        {
+          autoAlpha: 0,
+          opacity: 0.2,
+          yoyo: true,
+          repeat: -1,
+          duration: 1,
+          stagger: 1,
+        },
+        "-=1"
+      );
     },
   },
   mounted: function () {

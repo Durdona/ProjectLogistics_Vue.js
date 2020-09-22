@@ -646,6 +646,7 @@ export default {
 
       let centerContainer = document.querySelector(".center-container");
       animate.from(centerContainer, {
+        duration: 1.2,
         delay: 0.2,
         width: 0,
         x: -20,

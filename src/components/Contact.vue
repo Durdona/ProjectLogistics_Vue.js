@@ -103,7 +103,7 @@ export default {
         defaults: { opacity: 0, ease: "linear", autoAlpha: 0 },
       });
       animate_contact_h1.from("header .contact", {
-        duration: 1.5,
+        duration: 1,
         scale: 0,
         transformOrigin: "50% 50%",
         stagger: 0.5,
@@ -115,20 +115,20 @@ export default {
         .setTween(animate_contact_h1)
         .addTo(controllerContact);
 
-      //  Animate Contact Icons
-      new ScrollMagic.Scene({
-        triggerElement: ".contact-icons-container",
-        triggerHook: 0.7,
-      })
-        .setClassToggle(".contact-icons-container", "fade-in")
-        .addTo(controllerContact);
-
       // Animate Contact Form
       new ScrollMagic.Scene({
         triggerElement: ".contact-content",
         triggerHook: 0.7,
       })
         .setClassToggle(".contact-content", "fade-in")
+        .addTo(controllerContact);
+
+      //  Animate Contact Icons
+      new ScrollMagic.Scene({
+        triggerElement: ".contact-icons-container",
+        triggerHook: 0.7,
+      })
+        .setClassToggle(".contact-icons-container", "fade-in")
         .addTo(controllerContact);
     },
   },
