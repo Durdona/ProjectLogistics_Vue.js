@@ -138,7 +138,7 @@ export default {
     hiddenLogo() {
       let animate_hidden_logo = gsap.timeline();
 
-      let logoHead2 = document.querySelector("#logo-hidden-desktop");
+      let logoHead2 = document.querySelector(".logo-hidden-desktop");
       animate_hidden_logo.from(logoHead2, {
         // delay: 0.5,
         opacity: 0,
@@ -151,7 +151,7 @@ export default {
       });
 
       let truckHead2 = document.querySelector(
-        "#logo-hidden-desktop .truckHead"
+        ".logo-hidden-desktop .truckHead"
       );
       animate_hidden_logo.from(truckHead2, {
         // duration: 2.5,
@@ -160,7 +160,7 @@ export default {
         repeat: -1,
         duration: 0.8,
       });
-      let truckL1b = document.querySelector("#logo-hidden-desktop .logo-l1");
+      let truckL1b = document.querySelector(".logo-hidden-desktop .logo-l1");
       animate_hidden_logo.from(truckL1b, {
         // duration: 2.5,
         scale: 0.9,
@@ -168,7 +168,7 @@ export default {
         repeat: -1,
         duration: 1,
       });
-      let truckL2b = document.querySelector("#logo-hidden-desktop .logo-l2");
+      let truckL2b = document.querySelector(".logo-hidden-desktop .logo-l2");
       animate_hidden_logo.from(truckL2b, {
         delay: 0.5,
         scale: 0.9,
@@ -177,7 +177,7 @@ export default {
         duration: 1.5,
         // stagger: 1
       });
-      let truckL3b = document.querySelector("#logo-hidden-desktop .logo-l3");
+      let truckL3b = document.querySelector(".logo-hidden-desktop .logo-l3");
       animate_hidden_logo.from(truckL3b, {
         delay: 1,
         scale: 0.9,
@@ -185,6 +185,16 @@ export default {
         repeat: -1,
         duration: 2,
         // stagger: 2
+      });
+
+      let menu = document.querySelector(".nav-links");
+      animate_hidden_logo.from(menu, {
+        delay: 0.5,
+        y: 50,
+        opacity: 0,
+        // rotation: 90,
+        ease: "sine.out",
+        // autoAlpha: 0
       });
     },
 
@@ -195,7 +205,8 @@ export default {
     },
   },
   mounted: function () {
-    // this.hiddenLogo();
+    this.hiddenLogo();
+    this.showMenu();
   },
 };
 </script>
@@ -264,6 +275,144 @@ li:hover:after {
   }
   100% {
     background-position: 120px 0;
+  }
+}
+
+/* =========================================== Small Smartphones =================================  */
+/*  ======================================= Hamburger Menu =========================================== */
+
+@media (max-width: 499px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  .logo-hidden-desktop {
+    display: inline-block;
+    width: 72vw;
+    padding: 1rem 1.5rem;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  nav {
+    position: relative;
+  }
+  .center-hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 1.5rem;
+    padding-top: 1.5rem;
+    z-index: 2;
+    /* top: 55%; */
+    /* transform: translate(-1rem, -55%); */
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: url("../assets/body.jpg");
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    clip-path: circle(150px at 90% -45%);
+    -webkit-clip-path: circle(150px at 90% -45%);
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    z-index: 1;
+    /* pointer-events: none; */
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+  .nav-links li {
+    padding-top: 60px;
+  }
+  .nav-links li:nth-child(1) {
+    padding-top: 45px;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px 00px at 90% -45%);
+    -webkit-clip-path: circle(1000px at 90% -45%);
+    pointer-events: all;
+    /* visibility: visible; */
+  }
+}
+
+/* ===========================================  Small Smartphones Landscape =================================  */
+@media (min-width: 500px) and (max-width: 736px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  .logo-hidden-desktop {
+    display: inline-block;
+    width: 50vw;
+    padding: 1rem 2.5rem;
+    padding: 1rem 6%;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  nav {
+    position: relative;
+  }
+  .center-hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 6%;
+    padding-top: 1.5rem;
+    z-index: 2;
+    /* top: 55%; */
+    /* transform: translate(-1rem, -55%); */
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: url("../assets/body.jpg");
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    clip-path: circle(150px at 90% -45%);
+    -webkit-clip-path: circle(150px at 90% -45%);
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    z-index: 1;
+    /* pointer-events: none; */
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+  .nav-links li {
+    padding-top: 60px;
+  }
+  .nav-links li:nth-child(1) {
+    padding-top: 45px;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px 00px at 90% -45%);
+    -webkit-clip-path: circle(1000px at 90% -45%);
+    pointer-events: all;
+    /* visibility: visible; */
   }
 }
 </style>

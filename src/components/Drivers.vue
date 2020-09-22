@@ -52,7 +52,8 @@ export default {
 
 <style scoped>
 #forDrivers {
-  height: 30%;
+  /* height: 30%; */
+  height: 30vh;
   width: 100%;
   background-image: linear-gradient(
       105deg,
@@ -93,5 +94,31 @@ export default {
   letter-spacing: 1px;
   width: 80%;
   line-height: 1.8rem;
+}
+/* =========================================== Small Smartphones =================================  */
+/* ============================================ For Drivers ====================================== */
+
+@media (max-width: 499px) {
+  #forDrivers {
+    height: auto;
+  }
+  #forDrivers header {
+    height: auto;
+    font-size: 2rem;
+  }
+  #forDrivers header h1 {
+    padding-left: 0;
+  }
+  #forDrivers .driver-text {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 2rem;
+  }
+}
+
+/* ===========================================  Small Smartphones Landscape =================================  */
+@media (min-width: 500px) and (max-width: 736px) {
 }
 </style>

@@ -344,4 +344,55 @@ export default {
     order: 4;
   }
 }
+
+/* =========================================== Small Smartphones =================================  */
+/* ======================================== Why Choose Us Page ================================== */
+
+@media (max-width: 499px) {
+  .wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  #whyChooseUs {
+    height: initial;
+    padding-bottom: 2rem;
+  }
+  #whyChooseUs header {
+    height: auto;
+    font-size: 2rem;
+  }
+  #whyChooseUs header h1 {
+    padding-left: 0;
+  }
+  .div-wrapper {
+    flex-direction: column;
+    text-align: center;
+    height: initial;
+  }
+  .aside {
+    padding: 0;
+    margin: 0;
+    flex-basis: 0;
+    margin-bottom: 20px;
+  }
+  .aside:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .aside-text p {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .aside-text h2 {
+    padding-bottom: 10px;
+  }
+  .aside img {
+    left: 0;
+  }
+}
+
+/* ===========================================  Small Smartphones Landscape =================================  */
+@media (min-width: 500px) and (max-width: 736px) {
+}
 </style>

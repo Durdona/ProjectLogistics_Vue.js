@@ -663,16 +663,6 @@ export default {
         duration: 0.8,
       });
 
-      let menu = document.querySelector(".nav-links");
-      animate.from(menu, {
-        delay: 0.5,
-        y: 50,
-        opacity: 0,
-        // rotation: 90,
-        ease: "sine.out",
-        // autoAlpha: 0
-      });
-
       let social = document.querySelector(".social");
       animate.from(social, {
         opacity: 0,
@@ -1057,5 +1047,179 @@ export default {
   color: #bc2a8d;
   transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;
+}
+
+/* =========================================== Small Smartphones =================================  */
+/*  ======================================= Home Page =========================================== */
+
+@media (max-width: 499px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  .logo {
+    display: none;
+  }
+  /* ------------------------------------------------------- */
+  .center-container {
+    display: none;
+  }
+  .left-container {
+    display: none;
+  }
+  .outer-title {
+    left: 0.2rem;
+  }
+  .outer-title img {
+    width: 400px;
+  }
+  /* ----------------------- Header SVG  & Right Container Intro ------------------ */
+  .right-container {
+    width: 100vw;
+    background-image: linear-gradient(
+        124deg,
+        rgba(40, 40, 40, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 55%,
+        transparent 50%
+      ),
+      url("../assets/tesla_black_mobile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .overlay-right-container {
+    background: rgba(40, 40, 40, 0.7);
+  }
+  .social {
+    display: none;
+  }
+  .info-hidden {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 2rem;
+  }
+  .info-hidden a {
+    text-decoration: none;
+    /* margin-left: 1rem; */
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  }
+  .info-hidden a:nth-child(2) {
+    letter-spacing: 1px;
+    font-family: "Syne", sans-serif;
+  }
+  .info-hidden ion-icon {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 5px;
+  }
+  .phone-link {
+    padding-top: 0.5rem;
+    order: 2;
+  }
+  .email-link {
+    order: 1;
+  }
+  svg#header-svg {
+    width: 70vw;
+  }
+  .intro {
+    position: static;
+    width: 100%;
+    padding: 0;
+    /* padding-top: 1.5rem; */
+  }
+  .intro-header {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro p {
+    margin-left: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+  }
+  .intro button {
+    /* margin-top: 1rem; */
+    display: none;
+  }
+}
+
+/* ===========================================  Small Smartphones Landscape =================================  */
+@media (min-width: 500px) and (max-width: 736px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  .logo {
+    display: none;
+  }
+  /* ------------------------------------------------------- */
+  .center-container {
+    display: none;
+  }
+  .left-container {
+    display: none;
+  }
+  .outer-title {
+    left: 0.3rem;
+  }
+  .outer-title img {
+    width: 600px;
+  }
+  /* ----------------------- Header SVG  & Right Container Intro ------------------ */
+  .right-container {
+    width: 100vw;
+    background-image: linear-gradient(
+        124deg,
+        rgba(40, 40, 40, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 55%,
+        transparent 50%
+      ),
+      url("../assets/tesla_black_mobile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .overlay-right-container {
+    background: rgba(40, 40, 40, 0.7);
+  }
+  .social ion-icon {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .social-container {
+    left: 6%;
+    bottom: 1rem;
+  }
+
+  .intro {
+    position: static;
+    width: 100vw;
+    padding: 0;
+    padding-top: 1.5rem;
+  }
+  .intro-header {
+    margin: 10px auto;
+    text-align: center;
+  }
+  #header-svg {
+    width: 50vw;
+  }
+  .intro p {
+    margin-left: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 1rem;
+    margin-top: -8px;
+    line-height: 1.6rem;
+  }
 }
 </style>
