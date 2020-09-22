@@ -1,0 +1,14 @@
+
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#494950;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10; filter:url(#shadow)}
+</style>
+<filter id="shadow">
+      <!-- <feDropShadow dx="0.2" dy="0.4" stdDeviation="0.2"/> -->
+      <feDropShadow dx="0.5" dy="0.1" stdDeviation="0.1"/>
+</filter>
+<path class="st0" d="M23,4.7c-3.4,0-6.6-1.4-9-3.7c-2.4,2.3-5.6,3.7-9,3.7C3.6,4.7,2.3,4.4,1,4c0,14,5.5,19.6,13,23
+	c7.5-3.4,13-9,13-23C25.7,4.4,24.4,4.7,23,4.7z"/>
+<polyline class="st0" points="10,14 13,17 19,11 "/>
+</svg>
