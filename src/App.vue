@@ -63,4 +63,10 @@ body,
   /* border-top: 1px dotted rgba(40, 40, 40, 0.9); */
   border-top: 1px dotted gray;
 }
+@media (min-width: 1681px) {
+  body {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
 </style>

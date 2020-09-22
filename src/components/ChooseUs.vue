@@ -436,4 +436,107 @@ export default {
     width: 70%;
   }
 }
+
+/* ===========================================  Tablets ==============================  */
+
+@media (min-width: 737px) and (max-width: 980px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  #whyChooseUs {
+    height: initial;
+    padding-bottom: 35px;
+  }
+  #whyChooseUs header {
+    height: auto;
+    font-size: 2.8rem;
+  }
+  #whyChooseUs header h1 {
+    padding-left: 0;
+  }
+  .div-wrapper {
+    flex-direction: column;
+    text-align: center;
+    height: initial;
+  }
+  .aside {
+    padding: 0;
+    margin: 0;
+    flex-basis: 0;
+    margin-bottom: 35px;
+  }
+  .aside:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .aside-text p {
+    width: 60%;
+    padding-top: 10px;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .aside-text h2 {
+    padding-bottom: 20px;
+  }
+}
+
+/* ===========================================  Tablets  Larger Screen  | iPad Landscape Mode as well ==============================  */
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #whyChooseUs {
+    height: initial;
+    padding-bottom: 35px;
+  }
+  #whyChooseUs header {
+    height: auto;
+    font-size: 2.8rem;
+  }
+  #whyChooseUs header h1 {
+    padding-left: 0;
+  }
+  .div-wrapper {
+    flex-flow: row wrap;
+    text-align: center;
+    height: initial;
+  }
+  .aside {
+    flex-basis: 45vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .aside-text p {
+    width: 60%;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .aside img {
+    height: 65%;
+    width: 62%;
+    position: absolute;
+    top: 85px;
+  }
+}
+/* =============================   Tablet and Other Larger Screens =============== */
+@media (min-width: 1281px) and (max-width: 1680px) {
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .aside {
+    flex-basis: 46%;
+  }
+  .aside img {
+    height: 90%;
+    width: 80%;
+  }
+}
 </style>

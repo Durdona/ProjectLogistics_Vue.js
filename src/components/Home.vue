@@ -7,7 +7,7 @@
     <div class="left-container">
       <div class="logo">
         <svg
-          id="Layer_1"
+          id="logo "
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1220,6 +1220,269 @@ export default {
     font-size: 1rem;
     margin-top: -8px;
     line-height: 1.6rem;
+  }
+}
+
+/* **************************************************************************************** */
+@media (min-width: 500px) and (max-width: 736px) and (orientation: landscape) {
+  .intro p {
+    line-height: 1.6rem;
+  }
+  .intro button {
+    display: none;
+  }
+}
+
+/* ===========================================  Tablets ==============================  */
+@media (min-width: 737px) and (max-width: 980px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  /* #logo {
+    width: 37vw;
+  }
+  .logo {
+    padding-left: 3rem;
+  } */
+  /* ---------------------------------------------------------------- */
+  .outer-title {
+    left: 5%;
+  }
+  .outer-title img {
+    width: 700px;
+  }
+  /* .left-container {
+		width: 50vw;
+	} */
+  .left-container {
+    display: none;
+  }
+
+  .right-container {
+    width: 50vw;
+  }
+  .center-container {
+    display: none;
+  }
+  .info {
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+  .info a {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .phone-link {
+    padding-top: 0.5rem;
+    order: 2;
+  }
+  .email-link {
+    order: 1;
+  }
+  .info ion-icon {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .right-container {
+    width: 100vw;
+    background-image: linear-gradient(
+        127deg,
+        rgba(40, 40, 40, 0.9) 0%,
+        rgba(255, 255, 255, 0.2) 53%,
+        transparent 50%
+      ),
+      url(../assets/tesla_black.jpg);
+    /* background-image: linear-gradient(127deg, rgba(40, 40, 40, 0.9) 0%, rgba(40, 40, 40, 0.2) 53%, transparent 50%),
+			url(../assets/tesla_black.jpg); */
+    background-position: 38%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .overlay-right-container {
+    background: rgba(40, 40, 40, 0.5);
+  }
+  .intro {
+    /* top: 15vh; */
+    padding-right: 3rem;
+    padding-left: 2.5rem;
+  }
+  .right-container .intro {
+    left: 0;
+    width: 100%;
+  }
+  .right-container .intro-content {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  #header-svg {
+    width: 44vw;
+    height: 14vh;
+  }
+  .social-container {
+    right: 3rem;
+  }
+  .info-hidden {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 2rem;
+  }
+  .info-hidden a {
+    text-decoration: none;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  }
+  .info-hidden a:nth-child(2) {
+    letter-spacing: 1px;
+    font-family: "Syne", sans-serif;
+  }
+  .info-hidden ion-icon {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 5px;
+  }
+}
+/* ******************************************************************************************* */
+@media (min-width: 737px) and (max-width: 980px) and (orientation: landscape) {
+  .intro button {
+    display: none;
+  }
+  .right-container .intro-content {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  .info-hidden ion-icon {
+    color: bisque;
+  }
+  .info-hidden a {
+    font-size: 1rem;
+  }
+  .info-hidden {
+    bottom: 1rem;
+  }
+  .phone-link {
+    padding-top: 0.2rem;
+  }
+  .social-container {
+    bottom: 1rem;
+  }
+}
+
+/* ===========================================  Tablets  Larger Screen  | iPad Landscape Mode as well ==============================  */
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  .outer-title {
+    left: 6%;
+  }
+  .outer-title img {
+    width: 900px;
+  }
+  .left-container {
+    width: 36vw;
+  }
+  #logo {
+    width: 28vw;
+  }
+  .info {
+    flex-direction: column;
+    font-size: 2.5rem;
+  }
+  .info a {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .phone-link {
+    padding-top: 1rem;
+    order: 2;
+  }
+  .email-link {
+    order: 1;
+  }
+  .info ion-icon {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .center-container {
+    left: 6vw;
+    width: 50vw;
+  }
+  .center-container {
+    background-position: 35%;
+  }
+  .overlay-center-container {
+    background-position: 85%;
+  }
+  .intro {
+    left: 23vw;
+    top: 8vh;
+    width: 63%;
+  }
+  .intro button {
+    /* margin-top: 1.8rem; */
+  }
+}
+/* **************************************************************************************** */
+@media (min-width: 981px) and (max-width: 1280px) and (orientation: landscape) {
+  .intro button {
+    margin-top: 1.8rem;
+  }
+}
+
+/* =============================   Tablet and Other Larger Screens =============== */
+@media (min-width: 1281px) and (max-width: 1680px) {
+  .logo {
+    padding: 1.5rem 3rem;
+  }
+  .left-container {
+    /* width: 32vw; */
+  }
+  .intro {
+    left: 34vw;
+    top: 10vh;
+  }
+  .social-container {
+    right: 3rem;
+  }
+  .center-container {
+    left: 8vw;
+    width: 48vw;
+  }
+  .center-container {
+    background-position: 35%;
+  }
+  .overlay-center-container {
+    background-position: 85%;
+  }
+  .info {
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+  .info a {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .phone-link {
+    padding-top: 0.5rem;
+    order: 2;
+  }
+  .email-link {
+    order: 1;
+  }
+  .info ion-icon {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 </style>

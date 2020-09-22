@@ -167,4 +167,42 @@ export default {
     display: none;
   }
 }
+/* **************************************************************************************** */
+@media (min-width: 500px) and (max-width: 736px) and (orientation: landscape) {
+  .footer-info {
+    height: auto;
+  }
+}
+
+/* ===========================================  Tablets ==============================  */
+@media (min-width: 737px) and (max-width: 980px) {
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .footer {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-info {
+    font-size: 1.2rem;
+  }
+  .footer-info .social {
+    margin-left: 20px;
+    display: flex;
+  }
+}
+/* ===========================================  Tablets  Larger Screen ==============================  */
+@media (min-width: 981px) and (max-width: 1280px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* =============================   Tablet and Other Larger Screens =============== */
+@media (min-width: 1281px) and (max-width: 1680px) {
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 </style>

@@ -415,4 +415,83 @@ li:hover:after {
     /* visibility: visible; */
   }
 }
+
+/* ===========================================  Tablets ==============================  */
+@media (min-width: 737px) and (max-width: 980px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  .line {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  nav {
+    position: relative;
+  }
+  .center-hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 2rem;
+    padding-top: 1.5rem;
+    z-index: 2;
+    top: 45%;
+    transform: translate(-1rem, -55%);
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: url("../assets/body.jpg");
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    clip-path: circle(150px at 90% -45%);
+    -webkit-clip-path: circle(150px at 90% -45%);
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    z-index: 1;
+  }
+  .nav-links li {
+    padding-top: 60px;
+  }
+  .nav-links li:nth-child(1) {
+    padding-top: 45px;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px 00px at 90% -45%);
+    -webkit-clip-path: circle(1000px at 90% -45%);
+    pointer-events: all;
+  }
+  .logo-hidden-desktop {
+    display: inline-block;
+    width: 45vw;
+    padding: 1rem 3rem;
+    padding: 1rem 6%;
+  }
+}
+
+/* ===========================================  Tablets  Larger Screen  | iPad Landscape Mode as well ==============================  */
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  .nav-links {
+    /* height: 15vh; */
+    width: 70%;
+  }
+}
+/* =============================   Tablet and Other Larger Screens =============== */
+@media (min-width: 1281px) and (max-width: 1680px) {
+  .nav-links {
+    width: 50%;
+    right: 3rem;
+  }
+}
 </style>

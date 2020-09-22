@@ -545,4 +545,142 @@ export default {
     font-weight: lighter;
   }
 }
+/* ===========================================  Tablets ==============================  */
+@media (min-width: 737px) and (max-width: 980px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  #contactUs {
+    height: initial;
+    padding-bottom: 35px;
+  }
+  #contactUs header {
+    height: auto;
+    font-size: 2.8rem;
+  }
+  #contactUs header h1 {
+    padding-left: 0;
+  }
+  .contact-text p {
+    font-size: 1.3rem;
+    position: static;
+    top: auto;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contact-content-splitter {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-content .form-wrapper {
+    height: initial;
+  }
+  .contact-content .form {
+    padding: 35px 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contact-content .form:before {
+    border-radius: 5px;
+  }
+  .contact-content .form img.bottom {
+    border-radius: 5px;
+  }
+  .contact-content .form .input-group input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .contact-content .form .input-group label {
+    font-size: 1.2rem;
+  }
+  .contact-icons-container {
+    width: 100%;
+    padding-left: 0;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contact-me-icons {
+    padding-bottom: 2rem;
+  }
+  .phone-contact-wrapper {
+    padding-top: 2rem;
+  }
+  .contact-me-icons ion-icon {
+    font-size: 3.5rem;
+  }
+  .contact-me-icons h3 {
+    font-size: 1.9rem;
+  }
+  .contact-me-icons p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+}
+/* ===========================================  Tablets  Larger Screen  | iPad Landscape Mode as well ==============================  */
+@media (min-width: 981px) and (max-width: 1280px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #contactUs {
+    height: initial;
+    padding-bottom: 35px;
+  }
+  #contactUs header {
+    height: auto;
+    font-size: 2.8rem;
+  }
+  #contactUs header h1 {
+    padding-left: 0;
+  }
+  .contact-text p {
+    font-size: 1.1rem;
+    top: -50px;
+    color: rgba(255, 255, 255, 0.6);
+    left: 0px;
+  }
+  /* form itself*/
+  .contact-content {
+    width: 50%;
+  }
+  .contact-text {
+    width: 97%;
+  }
+
+  .contact-icons-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    padding-left: 0;
+    height: 55vh;
+    justify-content: space-evenly;
+    margin-top: auto;
+  }
+  .contact-me-icons {
+    padding-top: 2rem;
+  }
+  .phone-contact-wrapper {
+    order: 1;
+  }
+  .email-contact-wrapper {
+    order: 3;
+  }
+  .address-contact-wrapper {
+    order: 2;
+  }
+}
+/* **************************************************************************************** */
+@media (min-width: 981px) and (max-width: 1280px) and (orientation: landscape) {
+  .contact-text p {
+    top: -260px;
+  }
+}
+/* =============================   Tablet and Other Larger Screens =============== */
+@media (min-width: 1281px) and (max-width: 1680px) {
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 </style>

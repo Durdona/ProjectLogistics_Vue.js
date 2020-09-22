@@ -144,4 +144,69 @@ export default {
     line-height: 1.8rem;
   }
 }
+/* ===========================================  Tablets ==============================  */
+@media (min-width: 737px) and (max-width: 980px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  #forDrivers {
+    height: auto;
+  }
+
+  #forDrivers header {
+    height: auto;
+    font-size: 2.8rem;
+  }
+  #forDrivers header h1 {
+    padding-left: 0;
+  }
+  #forDrivers .driver-text {
+    font-size: 1.3rem;
+    padding-left: 0;
+    width: 100%;
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 2rem;
+  }
+}
+/* ===========================================  Tablets  Larger Screen  | iPad Landscape Mode as well ==============================  */
+@media (min-width: 981px) and (max-width: 1280px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #forDrivers {
+    height: auto;
+  }
+  .footer-info {
+    padding-left: 0px;
+  }
+  #forDrivers header {
+    height: auto;
+    font-size: 2.8rem;
+  }
+  #forDrivers header h1 {
+    padding-left: 0;
+  }
+  #forDrivers .driver-text {
+    font-size: 1.1rem;
+    padding-left: 0;
+    width: 90%;
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 2rem;
+  }
+}
+/* =============================   Tablet and Other Larger Screens =============== */
+@media (min-width: 1281px) and (max-width: 1680px) {
+  .wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 </style>
