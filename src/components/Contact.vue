@@ -254,7 +254,7 @@ export default {
   animation-name: cf3FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 7s;
+  animation-duration: 4s;
   animation-direction: alternate;
 }
 @keyframes cf3FadeInOut {
