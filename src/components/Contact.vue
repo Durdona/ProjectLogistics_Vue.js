@@ -255,6 +255,7 @@ export default {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 4s;
+  -webkit-animation-duration: 4s;
   animation-direction: alternate;
 }
 @keyframes cf3FadeInOut {

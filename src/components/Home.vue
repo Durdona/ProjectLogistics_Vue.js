@@ -886,8 +886,8 @@ export default {
   -webkit-animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
-  animation-duration: 7s;
-  -webkit-animation-duration: 7s;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
   animation-direction: alternate;
   -webkit-animation-direction: alternate;
   border-radius: 6px;
